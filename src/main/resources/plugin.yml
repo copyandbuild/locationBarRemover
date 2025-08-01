@@ -1,0 +1,13 @@
+name: locatorBarRemover
+version: '1.0'
+main: dev.larrox.locatorBarRemover.LocatorBarRemover
+api-version: '1.21'
+prefix: LocatorBarRemover
+authors: [ Larrox ]
+description: Removes the Anoying LocatorBar from the 1.21.6 update.
+website: larrox.dev
+commands:
+  locatorbarremover:
+    description: Removes the LocatorBar from the game.
+    usage: /<command>
+    permission: locatorbarremover.reload

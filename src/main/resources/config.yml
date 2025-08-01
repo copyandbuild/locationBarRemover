@@ -1,0 +1,5 @@
+value: false
+ignored-worlds:
+  - disabled_world
+  - another_world
+  - yet_another_world
