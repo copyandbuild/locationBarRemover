@@ -1,6 +1,6 @@
 package dev.larrox.locatorBarRemover;
 
-import dev.larrox.locatorBarRemover.cmd.ReloadCMD;
+import dev.larrox.locatorBarRemover.cmd.LocatorBarRemoverCMD;
 import dev.larrox.locatorBarRemover.util.Gamerules;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -13,7 +13,7 @@ public class LocatorBarRemover extends JavaPlugin {
         checkServerVersion();
         saveDefaultConfig();
         Gamerules gamerules = new Gamerules(this);
-        getCommand("locatorbarremover").setExecutor(new ReloadCMD(this, gamerules));
+        getCommand("locatorbarremover").setExecutor(new LocatorBarRemoverCMD(this, gamerules));
 
     }
 
