@@ -1,5 +1,5 @@
 name: locatorBarRemover
-version: '1.1'
+version: '1.1.1'
 main: dev.larrox.locatorBarRemover.LocatorBarRemover
 api-version: '1.21'
 prefix: LocatorBarRemover
