@@ -2,6 +2,7 @@ package dev.larrox.locatorBarRemover.util;
 
 import dev.larrox.locatorBarRemover.LocatorBarRemover;
 import org.bukkit.Bukkit;
+import org.bukkit.GameRule;
 import org.bukkit.World;
 
 import java.util.List;
@@ -24,6 +25,10 @@ public class Gamerules {
         for (World world : Bukkit.getWorlds()) {
             if (!ignoredWorlds.contains(world.getName())) {
                 if (world.isGameRule(gamerule)) {
+                    if (!world.getGameRuleValue(GameRule.LOCATOR_BAR)) {
+                        getLogger().info("Gamerule " + gamerule + " already set in world: " + world.getName() + ", skipping.");
+                        continue;
+                    }
                     world.setGameRuleValue(gamerule, Boolean.toString(value));
                     getLogger().info("Set gamerule " + gamerule + "=" + value + " in world: " + world.getName());
                 } else {

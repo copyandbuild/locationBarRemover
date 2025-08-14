@@ -30,7 +30,6 @@ public class LocatorBarRemoverCMD implements CommandExecutor, TabCompleter {
         }
 
         if (args.length == 0) {
-            gamerules.apply();
             sender.sendMessage("§8[§aLocatorBarRemover§8] §7usage: /locatorbarremover <reload/run/all>");
             return true;
         }
