@@ -6,7 +6,7 @@
 
     <groupId>dev.larrox</groupId>
     <artifactId>locatorbarremover</artifactId>
-    <version>1.1.1</version>
+    <version>1.1.2</version>
     <packaging>jar</packaging>
 
     <name>locatorbarremover</name>
@@ -55,6 +55,11 @@
             <id>spigotmc-repo</id>
             <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
         </repository>
+        <repository>
+            <id>larroxutils</id>
+            <name>LarroxUtilsAPI</name>
+            <url>https://repo.larrox.dev/releases</url>
+        </repository>
     </repositories>
 
     <dependencies>
@@ -63,6 +68,11 @@
             <artifactId>spigot-api</artifactId>
             <version>1.21.6-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>dev.larrox</groupId>
+            <artifactId>LarroxUtilsAPI</artifactId>
+            <version>1.0</version>
         </dependency>
     </dependencies>
 </project>
