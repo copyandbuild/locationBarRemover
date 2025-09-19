@@ -3,3 +3,6 @@ ignored-worlds:
   - disabled_world
   - another_world
   - yet_another_world
+
+console-prefix: "[LocatorBarRemover] "
+console-suffix: ""  
